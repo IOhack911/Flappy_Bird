@@ -27,7 +27,7 @@ public class BirdMover : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             _rigidbody2D.velocity = new Vector2(_speed, _tapForce);
             transform.rotation = _maxRotation;
